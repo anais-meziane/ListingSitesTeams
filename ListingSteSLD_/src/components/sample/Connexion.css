@@ -1,0 +1,185 @@
+/******************** DEFAULT *******************/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+:root {
+  --color-purple: #7a80eb;
+  --color-purple-d: #5b5fc5;
+  --color-purple-dark: #3539ab;
+  --color-white: #EEEEEE;
+  --color-default: #F5F5F5;
+  --color-disabled: #9c9c9c;
+  --color-transparent: rgba(0, 0, 0, 0.001)
+}
+
+::placeholder {
+  color: var(--color-purple-d);
+}
+
+.connectPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-purple);
+    width: 100%;
+    height: 100%;
+}
+
+#newUserForm {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-purple);
+    border-radius: 40px;
+    margin: 0 auto;
+    width: 60%;
+    height: fit-content;
+}
+
+#newUserForm h1 {
+    text-align: center;
+    margin: 50px auto 50px auto;
+    font-size: 52px;
+    font-family: 'Dancing Script', cursive;
+    color: var(--color-purple-dark);
+}
+
+#connectForm {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    border: 2px solid var(--color-purple);
+    border-radius: 40px;
+    margin: 0 auto;
+    width: 50%;
+    height: fit-content;
+}
+
+#connectForm h1 {
+    text-align: center;
+    margin: 50px auto 50px auto;
+    font-size: 52px;
+    font-family: 'Dancing Script', cursive;
+    color: var(--color-purple-dark);
+}
+
+.inscription {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+}
+
+.connect {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+}
+
+.inputBox input {
+    width: 225px;
+}
+
+.inputBox span {
+    width: 225px;
+    padding: 6% 8% 4.5% 8%;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 85px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    color: var(--color-purple-d);
+}
+
+.inputBox:last-child {
+    margin-bottom: 0;
+}
+
+.inputBox input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    border: solid 1px var(--color-purple-dark);
+    background: transparent;
+    padding: 25px 10px 10px 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    color: var(--color-purple-d);
+}
+
+.inputBox span {
+    position: absolute;
+    width: 85%;
+    top: 1px;
+    left: 1px;
+    padding: 15px 10px 10px 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    color: var(--color-purple-d);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.inputBox img {
+    width: 30px;
+}
+
+.inputBox button {
+    position: absolute;
+    width: 10%;
+    top: 20px;
+    margin-left: 76%;
+    border: none;
+    background-color: transparent;
+}
+
+.inputBox input:focus~span,
+.inputBox input:valid~span {
+    transform: translateY(-12px);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn_connect {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn_connect button[type=submit] {
+    margin: 105px auto 20px auto;
+    padding: 2px;
+    width: 225px;
+    font-size: 22px;
+    font-family: 'Dancing Script', cursive;
+    color: var(--color-white);
+    background-color: var(--color-purple-d);
+    border: 2px solid var(--color-purple-d);
+    border-radius: 10px;
+}
+
+#mdp {
+    margin: 10px auto 20px auto;
+    padding: 2px;
+    width: 225px;
+    font-size: 22px;
+    font-family: 'Dancing Script', cursive;
+    color: var(--color-purple-d);
+    background-color: var(--color-white);
+    border: 2px solid var(--color-purple-d);
+    border-radius: 10px;
+}
+
+.btn_connect button[type=button] {
+    margin: 20px auto 30px auto;
+    padding: 2px;
+    width: 225px;
+    font-size: 22px;
+    font-family: 'Dancing Script', cursive;
+    color: var(--color-purple-d);
+    border: none;
+}

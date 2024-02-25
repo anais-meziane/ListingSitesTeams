@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+:root {
+  --color-purple: #7a80eb;
+  --color-purple-d: #5b5fc5;
+  --color-purple-dark: #3539ab;
+  --color-white: #EEEEEE;
+  --color-default: #F5F5F5;
+  --color-disabled: #9c9c9c;
+  --color-transparent: rgba(0, 0, 0, 0.001)
+}
+
+::placeholder {
+  color: var(--color-purple-d);
+}
+
+.hebergement {
+  display: flex;
+  flex-direction: column;
+}
+
+.hebergement input {
+  margin: 20px auto;
+  width: 30%;
+  height: 30px;
+  color: var(--color-white);
+  text-align: center;
+  font-size: 18px;
+  background-color: var(--color-purple-d);
+  border: 2px solid var(--color-purple-d);
+  border-radius: 10px;
+  outline: none;
+}
+
+.hebergement textarea::placeholder {
+  color: var(--color-disabled);
+}
+
+.hebergement input::placeholder {
+  color: var(--color-disabled);
+}
+
+.hebergement textarea {
+  color: #000;
+  background-color: var(--color-transparent);
+  border: 2px solid var(--color-purple-d);
+  border-radius: 10px;
+  height: 300px;
+  padding: 15px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.ip {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 35px;
+  margin-bottom: 50px;
+}
+
+.ip h2 {
+  margin: 0;
+  margin-top: 50px;
+}
+
+.ip input {
+  margin: 0;
+  margin-left: 40px;
+  background-color: var(--color-transparent);
+  border: 2px solid var(--color-purple-d);
+  border-radius: 10px;
+  width: 80%;
+  height: 30px;
+  padding: 1px;
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+}
+
+.ip input:disabled {
+  margin-left: 40px;
+  background-color: var(--color-transparent);
+  border: 2px solid var(--color-disabled);
+  border-radius: 10px;
+  width: 80%;
+  height: 30px;
+  padding: 1px;
+  text-align: center;
+  color: var(--color-disabled);
+  font-size: 16px;
+}
+
+.ipv4 {
+  width: 40%;
+}
+
+.ipv6 {
+  width: 50%;
+}

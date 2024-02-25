@@ -1,0 +1,90 @@
+/******************** DEFAULT *******************/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+:root {
+  --color-purple: #7a80eb;
+  --color-purple-d: #5b5fc5;
+  --color-purple-dark: #3539ab;
+  --color-white: #EEEEEE;
+  --color-default: #F5F5F5;
+  --color-disabled: #9c9c9c;
+  --color-transparent: rgba(0, 0, 0, 0.001)
+}
+
+::placeholder {
+  color: var(--color-purple-d);
+}
+
+.information {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 100%;
+  margin-top: 2%;
+}
+
+.profil input {
+  max-width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: 2px solid var(--color-purple-d);
+  background-color: var(--color-purple-d);
+  border-radius: 10px;
+  height: 40px;
+  width: 50%;
+  color: var(--color-white);
+  text-align: center;
+  font-size: 30px;
+}
+
+.profil textarea {
+  border: 2px solid var(--color-purple-d);
+  background-color: var(--color-transparent);
+  border-radius: 10px;
+  margin-top: 30px;
+  width: 70%;
+  height: 320px;
+  padding: 15px;
+  font-size: 15px;
+  color: black;
+  outline: none;
+}
+
+.profil textarea::placeholder,
+.profil input::placeholder {
+  color: var(--color-disabled);
+}
+
+.btnopt {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnopt img {
+  width: 25px;
+}
+
+#supp,
+#upd,
+#save,
+#cancel {
+  border: 2px solid var(--color-purple-d);
+  background-color: var(--color-purple-d);
+  border-radius: 5px;
+  width: 95px;
+  height: 30px;
+  margin-left: 2px;
+}
+

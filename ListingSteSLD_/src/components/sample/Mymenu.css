@@ -1,0 +1,42 @@
+/******************** DEFAULT *******************/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+:root {
+    --color-purple: #7a80eb;
+    --color-purple-d: #5b5fc5;
+    --color-purple-dark: #3539ab;
+    --color-white: #EEEEEE;
+    --color-default: #F5F5F5;
+    --color-disabled: #9c9c9c;
+    --color-transparent: rgba(0, 0, 0, 0.001)
+}
+
+::placeholder {
+    color: var(--color-purple-d);
+}
+
+.container {
+    width: 69%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+.fui-TabList {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fui-TabList button {
+    padding: 5px;
+    font-size: 16px;
+}
+
+button[aria-selected="true"]{
+    padding: 5px;
+    border-bottom: 2px solid var(--color-purple-d);
+    font-weight: bold;
+    font-size: 16px;
+}

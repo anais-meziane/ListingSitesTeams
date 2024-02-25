@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+:root {
+    --color-purple: #7a80eb;
+    --color-purple-d: #5b5fc5;
+    --color-purple-dark: #3539ab;
+    --color-white: #EEEEEE;
+    --color-default: #F5F5F5;
+    --color-disabled: #9c9c9c;
+    --color-transparent: rgba(0, 0, 0, 0.001)
+}
+
+::placeholder {
+    color: var(--color-purple-d);
+}
+
+.mails {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-mail {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 35px auto;
+}
+
+.searchBar-mail {
+    display: flex;
+    width: 95%;
+    height: 35px;
+}
+
+.searchBar-mail input {
+    background-color: var(--color-purple-d);
+    border-top: 2px solid var(--color-purple-d);
+    border-bottom: 2px solid var(--color-purple-d);
+    border-left: 2px solid var(--color-purple-d);
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+    color: #FFF;
+    padding: 5px;
+    width: 200px;
+}
+
+.searchBar-mail img {
+    width: 35px;
+    height: 35px;
+    background-color: var(--color-purple-d);
+    border-top: 2px solid var(--color-purple-d);
+    border-bottom: 2px solid var(--color-purple-d);
+    border-right: 2px solid var(--color-purple-d);
+    border-radius: 0 5px 5px 0;
+    padding-right: 3px;
+}
+
+.mails button[type=button] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 20%;
+    color: var(--color-white);
+    background-color: var(--color-purple-d);
+    border: 2px solid var(--color-purple-d);
+    border-radius: 5px;
+}
+
+.mails button[type=button] img {
+    width: 18px;
+    margin-left: 8px;
+}
+
+.mail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.mail-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.mail-name input {
+    background-color: var(--color-transparent);
+    border: 2px solid var(--color-disabled);
+    border-radius: 5px;
+    height: 35px;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    width: 40%;
+    margin: 0 20px 0 60px;
+}
+
+.mail-name input:disabled {
+    background-color: var(--color-transparent);
+    border: 2px solid var(--color-purple-d);
+    border-radius: 5px;
+    height: 35px;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    width: 40%;
+    margin: 0 20px 0 60px;
+}
+
+.mail-name button {
+    border: none;
+    background-color: var(--color-transparent);
+}
+
+.mail-name button img {
+    width: 35px;
+}
+
+.mail textarea::placeholder {
+    color: var(--color-disabled);
+}
+
+.mail-name input::placeholder {
+    color: var(--color-disabled);
+}
+
+.header-mail input::placeholder {
+    color: #FFF;
+}
+
+.mail textarea {
+    color: #000;
+    background-color: var(--color-transparent);
+    border: 2px solid var(--color-disabled);
+    border-radius: 10px;
+    font-size: 14px;
+    height: 90px;
+    padding: 15px;
+    margin-bottom: 7px;
+    outline: none;
+}
+
+.mail textarea:disabled {
+    color: #000;
+    background-color: var(--color-transparent);
+    border: 2px solid var(--color-purple-d);
+    border-radius: 10px;
+    font-size: 14px;
+    height: 90px;
+    padding: 15px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.addMail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid var(--color-disabled);
+}
+
+.header-addMail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addMail button {
+    border: none;
+    background-color: var(--color-transparent);
+    display: flex;
+}
+
+.addMail h1 {
+    margin: 30px 65px;
+    color: var(--color-default);
+    background-color: var(--color-purple-d);
+    font-size: 25px;
+    padding: 15px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.addMail form {
+    display: flex;
+    flex-direction: column;
+}
+
+.addMail label {
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-bottom: 50px;
+    color: var(--color-purple-dark);
+}
+
+.addMail input {
+    background-color: var(--color-transparent);
+    border: 2px solid var(--color-purple-d);
+    border-radius: 5px;
+    margin-left: 7%;
+    padding: 5px;
+    margin-top: 2%;
+    width: 78%;
+    height: 28px;
+}
+
+.addMail button[type=submit] {
+    background-color: var(--color-purple-d);
+    border: 2px solid var(--color-purple-d);
+    border-radius: 10px;
+    color: var(--color-white);
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.addMail textarea {
+    color: #000;
+    background-color: var(--color-transparent);
+    border: 2px solid var(--color-purple-d);
+    border-radius: 10px;
+    font-size: 16px;
+    height: 90px;
+    padding: 15px;
+    margin-bottom: 10px;
+    outline: none;
+}

@@ -1,0 +1,417 @@
+/******************** DEFAULT *******************/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+:root {
+  --color-purple: #7a80eb;
+  --color-purple-d: #5b5fc5;
+  --color-purple-dark: #3539ab;
+  --color-white: #EEEEEE;
+  --color-default: #F5F5F5;
+  --color-disabled: #9c9c9c;
+  --color-transparent: rgba(0, 0, 0, 0.001)
+}
+
+::placeholder {
+  color: var(--color-purple-d);
+}
+
+.accueil {
+  display: flex;
+  flex-direction: row;
+  /* margin-top: 60px; */
+  width: 100%;
+  height: 98vh;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  height: 98%;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-right: 2px dashed var(--color-purple-d);
+}
+
+.home {
+  display: block;
+  background-color: var(--color-transparent);
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.home img {
+  width: 50px;
+  height: 50px;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 95%;
+  height: 35px;
+}
+
+.searchBar input {
+  background-color: var(--color-transparent);
+  border-top: 2px solid var(--color-purple-d);
+  border-bottom: 2px solid var(--color-purple-d);
+  border-left: 2px solid var(--color-purple-d);
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  padding: 5px;
+  width: 200px;
+}
+
+.searchBar img {
+  width: 35px;
+  height: 35px;
+  border-top: 2px solid var(--color-purple-d);
+  border-bottom: 2px solid var(--color-purple-d);
+  border-right: 2px solid var(--color-purple-d);
+  border-radius: 0 5px 5px 0;
+  padding-right: 3px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.filters {
+  margin-top: 45px;
+  width: 100%;
+}
+
+.filters h2 {
+  font-weight: normal;
+  text-align: center;
+  color: #3D3E78;
+  font-size: 20px;
+}
+
+.filters .btnfilters {
+  border: 2px solid var(--color-purple-d);
+  border-radius: 5px;
+  background-color: var(--color-purple-d);
+  width: 31%;
+  margin: 3px;
+}
+
+.btnfilters img {
+  width: 25px;
+  height: 25px;
+}
+
+.btnAjout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 55px 0 145px 0;
+}
+
+.btnAjouter {
+  position: relative;
+  color: var(--color-purple-d);
+  font-size: 16px;
+  border: 2px solid var(--color-purple-d);
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  text-align: left;
+  padding-left: 38px;
+}
+
+.btnAjouter img {
+  position: absolute;
+  top: 20%;
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.btnDeconnexion {
+  position: relative;
+  color: var(--color-white);
+  font-size: 16px;
+  border: 2px solid var(--color-purple-d);
+  background-color: var(--color-purple-d);
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btnDeconnexion img {
+  position: absolute;
+  top: 20%;
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.divtable {
+  display: flex;
+  flex-direction: column;
+}
+
+.table {
+  margin: 5% 2% 0 2%;
+  width: 60%;
+}
+
+p.no_result_p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.table img {
+  width: 30px;
+  height: 30px;
+}
+
+.table tr {
+  height: 50px;
+}
+
+.table th {
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.table td {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.table table {
+  border-collapse: collapse;
+}
+
+.name {
+  width: 20%;
+}
+
+.description {
+  width: 35%;
+}
+
+.activity {
+  width: 10%;
+}
+
+.author {
+  width: 10%;
+}
+
+.icon {
+  width: 15%;
+}
+
+.table button {
+  width: 1%;
+  border: none;
+  background-color: var(--color-transparent);
+}
+
+.pagination {
+  margin-top: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pagination button {
+  background-color: var(--color-transparent);
+  color: var(--color-purple-d);
+  border: 2px solid var(--color-purple-d);
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.pagination button.active {
+  background-color: var(--color-purple-d);
+  color: #F5F5F5;
+}
+
+.pagination .btnPrecedent,
+.pagination .btnSuivant {
+  background-color: var(--color-purple-d);
+  width: 100px;
+}
+
+.pagination img {
+  width: 30px;
+}
+
+/******************** POPUP *******************/
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 90%;
+  padding: 20px;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-purple-d);
+  border-radius: 30px;
+  box-shadow: 0 0 0 100000px rgba(91, 95, 197, .5);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.popup::-webkit-scrollbar {
+  display: none;
+}
+
+.popup form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.popup-header img {
+  width: 40px;
+  height: 40px;
+}
+
+.popup-header button {
+  border: none;
+  background-color: var(--color-transparent);
+  height: 40px;
+}
+
+.popup h2 {
+  margin-top: 0;
+  margin-left: 2%;
+  color: var(--color-purple-d);
+  font-size: 28px;
+}
+
+.popup b{
+  font-size: 16px;
+  color: var(--color-purple-dark);
+}
+
+.popup label {
+  margin-left: 13%;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin-bottom: 33px;
+  color: var(--color-purple-dark);
+}
+
+.popup input {
+  background-color: var(--color-transparent);
+  border: 2px solid var(--color-purple-d);
+  border-radius: 5px;
+  margin-left: 7%;
+  padding: 5px;
+  margin-top: 2%;
+  width: 70%;
+  height: 28px;
+}
+
+.popup textarea {
+  background-color: var(--color-transparent);
+  border: 2px solid var(--color-purple-d);
+  border-radius: 5px;
+  margin-left: 7%;
+  margin-top: 2%;
+  padding: 5px;
+  width: 70%;
+  height: 75px;
+  outline: none;
+}
+
+.popup button[type=submit] {
+  background-color: var(--color-purple-d);
+  border: 2px solid var(--color-purple-d);
+  border-radius: 10px;
+  color: var(--color-white);
+  width: 40%;
+  height: 35px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid var(--color-disabled);
+  margin-bottom: 33px;
+}
+
+.col1 {
+  width: 50%;
+}
+
+.col2 {
+  width: 50%;
+}
+
+.row1 .col2 .activity {
+  width: 80%;
+  display: flex;
+  margin-left: 13%;
+}
+
+.col2 .checkdiv {
+  display: flex;
+  margin-bottom: 11px;
+}
+
+.col2 .check {
+  display: flex;
+  flex-direction: row;
+}
+
+.col2 .check img {
+  width: 50px;
+  height: 50px;
+}
+
+.col2 input[type=checkbox] {
+  width: 20px;
+  margin: 10px auto 0 3%;
+  accent-color: var(--color-purple-d);
+}
+
+.popup-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin-top: 0;
+  background-color: var(--color-white);
+}
